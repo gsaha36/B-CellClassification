@@ -5,10 +5,14 @@ Texture provides significant information for classification in this problem henc
 
 Pretrained Classification models tried on the dataset - AlexNet, VGG16
 
-![Cancer cell images](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+[Cancer cell image 1](https://raw.githubusercontent.com/gsaha36/B-CellClassification/master/sample_images/all/UID_1_3_1_all.bmp)  
+[Cancer cell image 2](https://raw.githubusercontent.com/gsaha36/B-CellClassification/master/sample_images/all/UID_1_8_1_all.bmp)  
+[Cancer cell image 3](https://raw.githubusercontent.com/gsaha36/B-CellClassification/master/sample_images/all/UID_1_9_1_all.bmp)
 
 
-![Normal healthy cell images](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+[Normal healthy cell image 1](https://raw.githubusercontent.com/gsaha36/B-CellClassification/master/sample_images/hem/UID_H6_14_1_hem.bmp)  
+[Normal healthy cell image 2](https://raw.githubusercontent.com/gsaha36/B-CellClassification/master/sample_images/hem/UID_H6_5_1_hem.bmp)  
+[Normal healthy cell image 1](https://raw.githubusercontent.com/gsaha36/B-CellClassification/master/sample_images/hem/UID_H6_7_1_hem.bmp)  
 
 
 Append [Stain deconvolution layer](https://link.springer.com/chapter/10.1007/978-3-319-66179-7_50) before AlexNet/VGG(In Process)
