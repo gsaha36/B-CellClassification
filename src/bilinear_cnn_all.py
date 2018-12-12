@@ -53,13 +53,13 @@ class BCNN(torch.nn.Module):
             Score, torch.autograd.Variable of shape N*200.
         """
         N = X.size()[0]
-        assert X.size() == (N, 3, 448, 448)
+        assert X.size() == (N, 3, 400, 400)
         X = self.features(X)
-        assert X.size() == (N, 512, 28, 28)
+        assert X.size() == (N, 256, 24, 24)
         X = X.view(N, 512, 28**2)
         X = torch.bmm(X, torch.transpose(X, 1, 2)) / (28**2)  # Bilinear
-        assert X.size() == (N, 512, 512)
-        X = X.view(N, 512**2)
+        assert X.size() == (N, 256, 256)
+        X = X.view(N, 256**2)
         X = torch.sqrt(X + 1e-5)
         X = torch.nn.functional.normalize(X)
         X = self.fc(X)

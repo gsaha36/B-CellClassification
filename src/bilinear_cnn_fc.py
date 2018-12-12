@@ -88,7 +88,7 @@ class BCNN(torch.nn.Module):
         X = torch.sqrt(X + 1e-5)
         X = torch.nn.functional.normalize(X)
         X = self.fc(X)
-        assert X.size() == (N, 200)
+        assert X.size() == (N, 2)
         return X
 
 
