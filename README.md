@@ -29,15 +29,15 @@ B-CellClassification
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-----all  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-----hem  
         
-Validation Accuracy - 83%
-Test Accuracy - 77%
-To fine-tune FC layer Run the command-
-python ./src/bilinear_cnn_fc.py --base_lr 1.0 --batch_size 64 --epochs 55 --weight_decay 1e-8
+Validation Accuracy - 83%  
+Test Accuracy - 77%  
+To fine-tune FC layer Run the command-  
+python ./src/bilinear_cnn_fc.py --base_lr 1.0 --batch_size 64 --epochs 55 --weight_decay 1e-8  
 
-To fine-tune all layers Run the command-
-python ./src/bilinear_cnn_all.py --base_lr 1e-2 --batch_size 64 --epochs 25 --weight_decay 1e-5 --model "model.pth"
+To fine-tune all layers Run the command-  
+python ./src/bilinear_cnn_all.py --base_lr 1e-2 --batch_size 64 --epochs 25 --weight_decay 1e-5 --model "model.pth"  
 
-Make sure "model.pth" points to the proper model which was fine tuned before
+Make sure "model.pth" points to the proper model which was fine tuned before  
 
 Versions used:  
 Anaconda (4.0.0)  
